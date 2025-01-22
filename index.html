@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Data Risk Assessment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Personal Data Risk Assessment</h1>
+
+    <!-- Data Input Section -->
+    <div class="data-input">
+      <h2>Select the Data You Provide</h2>
+      <form id="data-form">
+        <label><input type="checkbox" value="1" data-sensitivity="low"> Name</label><br>
+        <label><input type="checkbox" value="2" data-sensitivity="medium"> Number</label><br>
+        <label><input type="checkbox" value="3" data-sensitivity="high"> Address</label><br>
+        <label><input type="checkbox" value="3" data-sensitivity="high"> Email</label><br>
+        <label><input type="checkbox" value="2" data-sensitivity="medium"> Birthdate</label><br>
+        <button type="button" id="calculate-risk">Analyze Risk</button>
+      </form>
+    </div>
+
+    <!-- Risk Assessment Section -->
+    <div class="risk-output">
+      <h2>Risk Assessment</h2>
+      <p id="risk-level">Risk Level: <span></span></p>
+      <p id="recommendations">Recommendations: <span></span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
