@@ -1,5 +1,5 @@
 body {
-    font-family: 'Bodoni', serif; 
+    font-family: 'Poppins', sans-serif; 
     margin: 0;
     padding: 0;
     background: url('bg.jpg') no-repeat center center fixed; 
@@ -15,13 +15,23 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
   }
-  
-  h1, h2 {
-    text-align: center;
+
+  .main-content {
+    display: flex;
+    justify-content: space-between;
   }
   
   .data-input, .risk-output {
-    margin-top: 20px;
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    background: rgba(68, 68, 68, 0.75); 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1, h2 {
+    text-align: center;
   }
   
   label {
@@ -49,6 +59,14 @@ body {
     margin: 10px 0;
   }
 
+  #risk-level {
+    font-size: 1.5em; 
+  }
+
+  #recommendations {
+    font-size: 1.1em; 
+  }
+
   .loading-overlay {
     position: fixed;
     top: 0;
@@ -63,5 +81,69 @@ body {
     font-size: 1.5em;
     z-index: 1000;
     display: none; 
+  }
+
+  .uh-header {
+    text-align: center;
+    font-size: 1.5em;
+    background: #600f96; 
+    color: white;
+    padding: 10px 0;
+  }
+
+  .front-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure space between elements */
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 2em;
+    padding: 20px;
+    font-weight: bold; 
+    backdrop-filter: blur(5px); 
+    padding-top: 50px; /* Add space at the top */
+  }
+
+  .sticky-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(68, 68, 68, 0.75);
+    color: #f4f4f9;
+    width: 100%;
+    position: relative; 
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer div {
+    flex: 1;
+  }
+
+  .view-document-box {
+    margin-top: auto; /* Move to the lower part */
+    margin-bottom: 20px; /* Add some space at the bottom */
+  }
+
+  .view-document {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+    background: #600f96; /* Purple background */
+    border-radius: 5px;
+    width: fit-content;
   }
 
