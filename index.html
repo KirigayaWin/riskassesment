@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Data Risk Assessment</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet"> <!-- Include Bodoni font -->
 </head>
 <body>
   <div class="container">
     <h1>Personal Data Risk Assessment</h1>
 
-    <!-- Data Input Section -->
+    
     <div class="data-input">
       <h2>Select the Data You Provide</h2>
       <form id="data-form">
@@ -23,13 +24,14 @@
       </form>
     </div>
 
-    <!-- Risk Assessment Section -->
+    
     <div class="risk-output">
       <h2>Risk Assessment</h2>
       <p id="risk-level">Risk Level: <span></span></p>
       <p id="recommendations">Recommendations: <span></span></p>
     </div>
   </div>
+  <div class="loading-overlay">Analyzing...</div> 
   <script src="script.js"></script>
 </body>
 </html>
