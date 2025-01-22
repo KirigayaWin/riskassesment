@@ -3,15 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Data Risk Assessment</title>
+  <title> <h1><b>Personal Data Risk Assessment</b><h1></title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet"> <!-- Include Bodoni font -->
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
+  <div class="uh-header sticky-header">STEM 12-3</div> 
+
+  <div class="front-page" style="text-align: center;">
+    <div style="height: 400px;"></div>
+    <div>Website Development: Educating Individuals on the Risks and Value of Personal Data.</div>
+    <div class="view-document-box">
+      <a href="document.pdf" class="view-document">View Document</a>
+    </div>
+  </div>
+
+  <div style="height: 300px;"></div> 
+
   <div class="container">
     <h1>Personal Data Risk Assessment</h1>
+  </div>
 
-    
+  <div class="main-content container">
     <div class="data-input">
       <h2>Select the Data You Provide</h2>
       <form id="data-form">
@@ -19,19 +33,38 @@
         <label><input type="checkbox" value="2" data-sensitivity="medium"> Number</label><br>
         <label><input type="checkbox" value="3" data-sensitivity="high"> Address</label><br>
         <label><input type="checkbox" value="3" data-sensitivity="high"> Email</label><br>
+        <label><input type="checkbox" value="4" data-sensitivity="high"> Location</label><br>
         <label><input type="checkbox" value="2" data-sensitivity="medium"> Birthdate</label><br>
         <button type="button" id="calculate-risk">Analyze Risk</button>
       </form>
     </div>
 
-    
     <div class="risk-output">
       <h2>Risk Assessment</h2>
       <p id="risk-level">Risk Level: <span></span></p>
       <p id="recommendations">Recommendations: <span></span></p>
     </div>
   </div>
+
   <div class="loading-overlay">Analyzing...</div> 
+  
+  <div style="height: 500px;"></div> 
+
+  <footer class="footer">
+    <div>
+      <p>lalaki 1</p>
+      <p>Email: email1</p>
+    </div>
+    <div>
+      <p>lalaki 2</p>
+      <p>Email: email2</p>
+    </div>
+    <div>
+      <p>lalaki3</p>
+      <p>Email: email3</p>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
