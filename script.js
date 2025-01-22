@@ -3,7 +3,7 @@ document.getElementById("calculate-risk").addEventListener("click", function () 
     let totalRisk = 0;
     let sensitivityCount = { low: 0, medium: 0, high: 0 };
 
-    // Show loading overlay
+    
     const loadingOverlay = document.createElement("div");
     loadingOverlay.className = "loading-overlay";
     loadingOverlay.textContent = "Analyzing...";
@@ -11,7 +11,7 @@ document.getElementById("calculate-risk").addEventListener("click", function () 
     loadingOverlay.style.display = "flex";
 
     setTimeout(function() {
-        // Calculate the total risk score
+        
         checkboxes.forEach((checkbox) => {
             if (checkbox.checked) {
                 totalRisk += parseInt(checkbox.value);
@@ -19,7 +19,7 @@ document.getElementById("calculate-risk").addEventListener("click", function () 
             }
         });
 
-        // Determine the risk level
+        
         let riskLevel;
         if (totalRisk <= 3) {
             riskLevel = "Low";
@@ -29,10 +29,10 @@ document.getElementById("calculate-risk").addEventListener("click", function () 
             riskLevel = "High";
         }
 
-        // Display the results
+        
         document.getElementById("risk-level").querySelector("span").textContent = riskLevel;
 
-        // Generate recommendations
+        
         let recommendations = "To secure your data, consider:";
         if (sensitivityCount.high > 0) {
             recommendations += " Avoid sharing highly sensitive data like your address.";
@@ -45,8 +45,8 @@ document.getElementById("calculate-risk").addEventListener("click", function () 
         }
         document.getElementById("recommendations").querySelector("span").textContent = recommendations;
 
-        // Hide loading overlay
+        
         loadingOverlay.style.display = "none";
-    }, 2000); // 2 seconds delay
+    }, 2000); 
 });
 
