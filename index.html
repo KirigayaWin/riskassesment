@@ -12,43 +12,43 @@
   <div class="uh-header sticky-header">STEM 12-3</div> 
 
   <div class="front-page" style="text-align: center;">
-    <div style="height: 400px;"></div>
+    <div style="height: 150px;"></div>
     <div>Website Development: Educating Individuals on the Risks and Value of Personal Data.</div>
-    <div class="view-document-box">
-      <a href="document.pdf" class="view-document">View Document</a>
-    </div>
+    <h2>Subheading</h2> 
   </div>
 
   <div style="height: 300px;"></div> 
 
-  <div class="container">
-    <h1>Personal Data Risk Assessment</h1>
-  </div>
-
-  <div class="main-content container">
-    <div class="data-input">
-      <h2>Select the Data You Provide</h2>
-      <form id="data-form">
-        <label><input type="checkbox" value="1" data-sensitivity="low"> Name</label><br>
-        <label><input type="checkbox" value="2" data-sensitivity="medium"> Number</label><br>
-        <label><input type="checkbox" value="3" data-sensitivity="high"> Address</label><br>
-        <label><input type="checkbox" value="3" data-sensitivity="high"> Email</label><br>
-        <label><input type="checkbox" value="4" data-sensitivity="high"> Location</label><br>
-        <label><input type="checkbox" value="2" data-sensitivity="medium"> Birthdate</label><br>
-        <button type="button" id="calculate-risk">Analyze Risk</button>
-      </form>
-    </div>
-
-    <div class="risk-output">
-      <h2>Risk Assessment</h2>
-      <p id="risk-level">Risk Level: <span></span></p>
-      <p id="recommendations">Recommendations: <span></span></p>
-    </div>
-  </div>
-
   <div class="loading-overlay">Analyzing...</div> 
   
   <div style="height: 500px;"></div> 
+
+  <div class="container">
+    <div class="assessment-box">
+        <h1>Personal Data Risk Assessment</h1>
+    </div>
+    <div class="data-input">
+        <h2>Select the Data You Provide</h2>
+        <form id="data-form">
+            <div class="input-box"><label><input type="checkbox" value="1" data-sensitivity="low"> Name</label></div>
+            <div class="input-box"><label><input type="checkbox" value="2" data-sensitivity="medium"> Number</label></div>
+            <div class="input-box"><label><input type="checkbox" value="3" data-sensitivity="high"> Address</label></div>
+            <div class="input-box"><label><input type="checkbox" value="3" data-sensitivity="high"> Email</label></div>
+            <div class="input-box"><label><input type="checkbox" value="4" data-sensitivity="high"> Location</label></div>
+            <div class="input-box"><label><input type="checkbox" value="2" data-sensitivity="medium"> Birthdate</label></div>
+            <div class="button-box">
+                <button type="button" id="calculate-risk">Analyze Risk</button>
+            </div>
+        </form>
+    </div>
+    <div class="risk-output">
+        <div class="output-box">
+            <h2>Risk Assessment</h2>
+            <p id="risk-level">Risk Level: <span></span></p>
+            <p id="recommendations">Recommendations: <span></span></p>
+        </div>
+    </div>
+  </div>
 
   <footer class="footer">
     <div>
@@ -62,6 +62,9 @@
     <div>
       <p>lalaki3</p>
       <p>Email: email3</p>
+    </div>
+    <div class="view-document-box">
+      <a href="document.pdf" class="view-document">Download Document</a>
     </div>
   </footer>
 
