@@ -11,27 +11,72 @@ body {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(68, 68, 68, 0.75); 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
   }
 
   .main-content {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
   }
   
   .data-input, .risk-output {
     flex: 1;
-    margin: 20px;
+    margin: 20px 0;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  
+  .data-input label, .risk-output p {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .button-box {
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .combined-content {
     padding: 20px;
     background: rgba(68, 68, 68, 0.75); 
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
-  
+
+  .input-box {
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(68, 68, 68, 0.75); 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .assessment-box, .input-box, .output-box {
+    padding: 20px;
+    background: rgba(68, 68, 68, 0.75); 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+  }
+
   h1, h2 {
     text-align: center;
+  }
+
+  h1 {
+    font-size: 3.0em; /* Font size for heading */
   }
   
   label {
@@ -107,6 +152,11 @@ body {
     padding-top: 50px; /* Add space at the top */
   }
 
+  .front-page h2 {
+    font-size: 0.7em; /* Font size for subheading */
+    margin-top: 10px; /* Adjust margin to bring it closer to the heading */
+  }
+
   .sticky-header {
     position: fixed;
     top: 0;
@@ -122,7 +172,7 @@ body {
     width: 100%;
     position: relative; 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Changed to space-between */
   }
 
   .footer div {
@@ -132,10 +182,11 @@ body {
   .view-document-box {
     margin-top: auto; /* Move to the lower part */
     margin-bottom: 20px; /* Add some space at the bottom */
+    text-align: right; /* Align to the right */
   }
 
   .view-document {
-    display: block;
+    display: inline-block; /* Changed to inline-block */
     margin: 20px auto;
     padding: 10px 20px;
     text-align: center;
@@ -145,5 +196,57 @@ body {
     background: #600f96; /* Purple background */
     border-radius: 5px;
     width: fit-content;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .main-content {
+      flex-direction: column;
+    }
+  
+    .data-input, .risk-output {
+      margin: 10px 0;
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 2em;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+  
+    label {
+      font-size: 1em;
+    }
+  
+    button {
+      width: 100%;
+      font-size: 0.9em;
+    }
+  
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer div {
+      margin-bottom: 10px;
+    }
+  
+    .view-document-box {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    .view-document {
+      width: 100%;
+      font-size: 1em;
+    }
   }
 
